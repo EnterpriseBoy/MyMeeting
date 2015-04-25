@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dip">
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:id="@+id/btnSaveImage"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/mybutton"
+            android:text="@string/btnSaveImage"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btnDeleteImage"
+            android:background="@drawable/mybutton"
+            android:text="@string/btnDeleteImage"
+            android:layout_marginTop="5dp"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageViewImage"
+        android:src="@drawable/image"
+        android:scaleType="fitXY"
+        android:padding="1px"
+        android:background="#ffffff"/>
+
+</LinearLayout>

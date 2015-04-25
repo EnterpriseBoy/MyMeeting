@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Meeting</string>
+
+    <string name="hello_world">My Meeting</string>
+    <string name="txtPicture">Take Picture</string>
+    <string name="txtSound">Record Sound</string>
+    <string name="txtSend">Send eMail</string>
+    <string name="action_settings">Settings</string>
+    <string name="message">Message</string>
+    <string name="sendemail">Send Email</string>
+    <string name="subject">Subject:</string>
+    <string name="to">To:</string>
+    <string name="btnUploadFile">Upload File</string>
+    <string name="btnListFile">List Files</string>
+    <string name="btnDeleteFile">Delete File</string>
+    <string name="btnDeleteImage">Delete Image</string>
+    <string name="btnSaveImage">Save Image</string>
+    <string name="textviewSoundSaveFileText">File name:</string>
+    <string name="soundPlaceHolder">soundImage</string>
+    <string name="meetingDesc">Meeting Desc:</string>
+    <string name="getlocation">Get Location</string>
+    <string name="mobileNumber">Mobile num:</string>
+    <string name="saveMobilePhoneNumber">Remember Number</string>
+    <string name="saveDetailsDatabase">Save Details to Datbase</string>
+
+</resources>

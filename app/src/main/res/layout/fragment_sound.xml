@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragSoundView"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRecord"
+            android:text="Record"
+            android:background="@drawable/mybuttonsound"
+            android:layout_weight=".25"/>
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlay"
+            android:text="Play"
+            android:background="@drawable/mybuttonsound"
+            android:layout_weight=".25"/>
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStop"
+            android:text="Stop"
+            android:background="@drawable/mybuttonsound"
+            android:layout_weight=".25"/>
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSave"
+            android:background="@drawable/mybuttonsound"
+            android:text="Save"
+            android:layout_weight=".25"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewSoundSaveFileLabel"
+            android:text="@string/textviewSoundSaveFileText"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextFileNameSave"
+            android:layout_toEndOf="@+id/textviewSoundSaveFileLabel"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageViewSound"
+            android:src="@drawable/sound"
+            android:contentDescription="@string/soundPlaceHolder" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
