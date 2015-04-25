@@ -1,4 +1,4 @@
-package magiweb.eu.mymeeting.fragments;
+package magiweb.eu.mymeeting;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import magiweb.eu.mymeeting.MainActivity;
+import magiweb.eu.mymeeting.MySQLiteHelper;
 import magiweb.eu.mymeeting.R;
 
 /**
@@ -42,7 +43,6 @@ public class FragmentStartup extends Fragment implements View.OnClickListener {
         buttonSavePhoneNumber.setOnClickListener(this);
 
 
-
         return view;
 
 
@@ -61,7 +61,8 @@ public class FragmentStartup extends Fragment implements View.OnClickListener {
         }
 
         if(buttonSaveDetailsPressed= view.toString().contains("buttonSaveDetailsDatabase")){
-            MySQLiteHelper db = new MySQLiteHelper(MainActivity.this);
+            //MySQLiteHelper requires the context to be passed to it
+            MySQLiteHelper db = new MySQLiteHelper(thiscontext);
             db.addStudent(new Student("Student One", "+1111111", "Module 1", "Course 1"));
             Toast.makeText(thiscontext, "Save Details pressed", Toast.LENGTH_LONG).show();
         }

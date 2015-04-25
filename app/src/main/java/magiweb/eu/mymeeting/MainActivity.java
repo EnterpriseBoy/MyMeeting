@@ -17,10 +17,9 @@ import java.io.File;
 import magiweb.eu.mymeeting.fragments.FragmentEmail;
 import magiweb.eu.mymeeting.fragments.FragmentImage;
 import magiweb.eu.mymeeting.fragments.FragmentSound;
-import magiweb.eu.mymeeting.fragments.FragmentStartup;
 import magiweb.eu.mymeeting.fragments.FragmentUpload;
 
-public class MainActivity extends Activity  {
+public class MainActivity extends Activity {
 
     Fragment fr;
     FragmentManager fm;
@@ -51,19 +50,19 @@ public class MainActivity extends Activity  {
             mExternalStorageAvailable = mExternalStorageWriteable = false;
         }
         //TODO change this to enable or disable the buttons.
-            Toast.makeText(this, "Media Stroage Available: " + mExternalStorageAvailable +"\nMedia Stroage Writeable: " +mExternalStorageWriteable , Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Media Stroage Available: " + mExternalStorageAvailable + "\nMedia Stroage Writeable: " + mExternalStorageWriteable, Toast.LENGTH_LONG).show();
 
         // Creating database and table
-        db=openOrCreateDatabase("StudentDB", Context.MODE_PRIVATE, null);
+        db = openOrCreateDatabase("StudentDB", Context.MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS student(rollno VARCHAR,name VARCHAR,marks VARCHAR);");
 
         //Check if the folder exists or make it.
-        File mFolder = new File( Environment.getExternalStorageDirectory().getAbsolutePath()+ "/MyMeeting/");
+        File mFolder = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/MyMeeting/");
         Toast.makeText(this, "CP: " + mFolder, Toast.LENGTH_LONG).show();
         if (!mFolder.exists()) {
             mFolder.mkdir();
             Toast.makeText(this, "Folder:" + mFolder + "\nwas created", Toast.LENGTH_LONG).show();
-        }else{
+        } else {
             Toast.makeText(this, "Folder:" + mFolder + "\nexists", Toast.LENGTH_LONG).show();
         }
 

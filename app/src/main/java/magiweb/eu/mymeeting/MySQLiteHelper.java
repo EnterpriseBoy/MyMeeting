@@ -1,4 +1,4 @@
-package magiweb.eu.mymeeting.fragments;
+package magiweb.eu.mymeeting;
 
 import java.util.LinkedList;
 import java.util.List;
